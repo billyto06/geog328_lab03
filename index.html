@@ -69,7 +69,7 @@
             container: 'map',
             style: 'mapbox://styles/mapbox/dark-v10',
             zoom: 10,
-            center: [-122.3351, 47.6080] // Centered over Seattle
+            center: [-122.3351, 47.6080] 
         });
 
         async function geojsonFetch() {
@@ -86,7 +86,7 @@
                 });
                 map.addLayer({
                     'id': 'lines-layer',
-                    'type': 'line', // Changed to line type
+                    'type': 'line', 
                     'source': 'lines',
                     'paint': {
                         'line-width': 3,
@@ -112,9 +112,9 @@
 
             lines.features.forEach(feature => {
             let row = table.insertRow(-1);
-            row.insertCell(0).innerText = feature.properties.BLOCK_DESCR || "N/A";  // Street name
-            row.insertCell(1).innerText = feature.properties.MORA_STATUS || "N/A";  // Moratorium status
-            row.insertCell(2).innerText = new Date(feature.properties.MORA_EXPIRE_DATE).toLocaleDateString("en-US") || "N/A";  // Expiration date
+            row.insertCell(0).innerText = feature.properties.BLOCK_DESCR || "N/A";  
+            row.insertCell(1).innerText = feature.properties.MORA_STATUS || "N/A"; 
+            row.insertCell(2).innerText = new Date(feature.properties.MORA_EXPIRE_DATE).toLocaleDateString("en-US") || "N/A";  
             });
         }
         geojsonFetch();
