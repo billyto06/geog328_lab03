@@ -1,0 +1,19 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [139.7725, 35.7000], [139.7755, 35.7000], [139.7755, 35.6950], [139.7725, 35.6950], [139.7725, 35.7000]
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Akihabara"
+            }
+        }
+    ]
+}
